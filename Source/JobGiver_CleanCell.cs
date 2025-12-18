@@ -40,28 +40,22 @@ namespace PrisonersAreNotSwines
             {
                 return null;
             }
-            job.targetQueueA.SortBy((LocalTargetInfo targ) => targ.Cell.DistanceToSquared(pawn.Position));
+            job.targetQueueA.SortBy(targ => targ.Cell.DistanceToSquared(pawn.Position));
             return job;
         }
         private bool HasJobOnThing(Pawn pawn, Thing t)
         {
             if (!(t is Filth filth))
-            {
                 return false;
-            }
+
             if (!filth.Map.areaManager.Home[filth.Position])
-            {
                 return false;
-            }
+
             if (!pawn.CanReserve(t, 1, -1, null, false))
-            {
                 return false;
-            }
 
             if (filth.TicksSinceThickened < 600)
-            {
                 return false;
-            }
 
             return true;
         }
