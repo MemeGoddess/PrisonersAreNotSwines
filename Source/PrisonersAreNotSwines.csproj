@@ -11,7 +11,7 @@
         <DebugSymbols>true</DebugSymbols>
         <DebugType>portable</DebugType>
         <Optimize>false</Optimize>
-        <OutputPath>..\1.5\Assemblies\</OutputPath>
+        <OutputPath>..\1.6\Assemblies\</OutputPath>
         <DefineConstants>DEBUG</DefineConstants>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <WarningLevel>4</WarningLevel>
@@ -22,14 +22,14 @@
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">
         <DebugType>none</DebugType>
         <Optimize>true</Optimize>
-        <OutputPath>..\1.5\Assemblies\</OutputPath>
+        <OutputPath>..\1.6\Assemblies\</OutputPath>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <WarningLevel>4</WarningLevel>
         <Prefer32Bit>false</Prefer32Bit>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4409" />
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4633" />
         <PackageReference Include="Lib.Harmony" Version="2.4.2">
           <ExcludeAssets>runtime</ExcludeAssets>
         </PackageReference>
